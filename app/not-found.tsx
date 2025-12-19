@@ -19,7 +19,7 @@ export default function NotFound() {
           <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-muted">
             <FileQuestion className="h-6 w-6 text-muted-foreground" />
           </div>
-          <CardTitle className="text-2xl">Page Not Found</CardTitle>
+          <CardTitle className="text-2xl pt-sans-bold">Page Not Found</CardTitle>
           <CardDescription>
             The page you're looking for doesn't exist or has been moved.
           </CardDescription>

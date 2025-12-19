@@ -1,9 +1,9 @@
 "use client"
 
 import { useState } from "react"
-import { DashboardStats } from "@/components/dashboard-stats"
-import { DashboardCharts } from "@/components/dashboard-charts"
-import { BusinessSelector } from "@/components/business-selector"
+import { DashboardStats } from "@/components/shared/dashboard-stats"
+import { DashboardCharts } from "@/components/shared/dashboard-charts"
+import { BusinessSelector } from "@/components/shared/business-selector"
 
 export default function Dashboard() {
   const [selectedBusiness, setSelectedBusiness] = useState("acme-corp")

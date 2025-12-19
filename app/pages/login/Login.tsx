@@ -13,7 +13,7 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Checkbox } from "@/components/ui/checkbox"
 
-export default function Login() {
+export function Login() {
   const [showPassword, setShowPassword] = useState(false)
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
@@ -38,7 +38,7 @@ export default function Login() {
               <span className="text-white font-bold text-xl">📞</span>
             </div>
           </div>
-          <CardTitle className="text-2xl font-bold text-center">Welcome back</CardTitle>
+          <CardTitle className="text-2xl pt-sans-bold text-center">Welcome back</CardTitle>
           <CardDescription className="text-center">Sign in to your AI Dialer account</CardDescription>
         </CardHeader>
         <form onSubmit={handleLogin}>

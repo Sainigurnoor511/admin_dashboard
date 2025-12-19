@@ -3,7 +3,7 @@
 import type React from "react"
 import { usePathname } from "next/navigation"
 import { SidebarProvider, SidebarInset, SidebarTrigger } from "@/components/ui/sidebar"
-import { AppSidebar } from "@/components/app-sidebar"
+import { AppSidebar } from "@/components/shared/app-sidebar"
 
 export function ConditionalLayout({ children }: { children: React.ReactNode }) {
   const pathname = usePathname()

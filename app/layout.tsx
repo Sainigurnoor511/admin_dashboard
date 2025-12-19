@@ -1,14 +1,11 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
 import "../styles/globals.css"
-import { ThemeProvider } from "@/components/theme-provider"
+import { ThemeProvider } from "@/components/shared/theme-provider"
 import { SidebarProvider, SidebarInset, SidebarTrigger } from "@/components/ui/sidebar"
-import { AppSidebar } from "@/components/app-sidebar"
-import { AuthGuard } from "@/components/auth-guard"
-import { ConditionalLayout } from "@/components/conditional-layout"
-
-const inter = Inter({ subsets: ["latin"] })
+import { AppSidebar } from "@/components/shared/app-sidebar"
+import { AuthGuard } from "@/components/shared/auth-guard"
+import { ConditionalLayout } from "@/components/shared/conditional-layout"
 
 export const metadata: Metadata = {
   title: "AI Dialer Admin Dashboard",
@@ -23,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
+      <body className="pt-sans-regular">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <AuthGuard>
             <ConditionalLayout>{children}</ConditionalLayout>

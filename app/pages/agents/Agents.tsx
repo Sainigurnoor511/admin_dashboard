@@ -4,7 +4,7 @@ import { useState } from "react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
-import { BusinessSelector } from "@/components/business-selector"
+import { BusinessSelector } from "@/components/shared/business-selector"
 
 const agentsByBusiness = {
   "all-businesses": [
@@ -190,7 +190,7 @@ const agentsByBusiness = {
   ],
 }
 
-export default function Agents() {
+export function Agents() {
   const [selectedBusiness, setSelectedBusiness] = useState("acme-corp")
 
   const agents = agentsByBusiness[selectedBusiness as keyof typeof agentsByBusiness] || []
@@ -211,7 +211,7 @@ export default function Agents() {
     <div className="flex-1 space-y-4 p-4 md:p-8 pt-6">
       <div className="flex items-center justify-between space-y-2">
         <div>
-          <h2 className="text-3xl font-bold tracking-tight">Agents - {getBusinessDisplayName(selectedBusiness)}</h2>
+          <h2 className="text-3xl pt-sans-bold tracking-tight">Agents - {getBusinessDisplayName(selectedBusiness)}</h2>
           <p className="text-muted-foreground">Manage your AI agents and their capabilities</p>
         </div>
         <BusinessSelector onBusinessChange={setSelectedBusiness} selectedBusiness={selectedBusiness} />

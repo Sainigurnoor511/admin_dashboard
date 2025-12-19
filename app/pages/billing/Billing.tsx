@@ -4,7 +4,7 @@ import { useState } from "react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { BusinessSelector } from "@/components/business-selector"
+import { BusinessSelector } from "@/components/shared/business-selector"
 import { CreditCard, Clock, Calendar, DollarSign } from "lucide-react"
 import { Progress } from "@/components/ui/progress"
 
@@ -66,7 +66,7 @@ const billingData = {
   },
 }
 
-export default function Billing() {
+export function Billing() {
   const [selectedBusiness, setSelectedBusiness] = useState("acme-corp")
 
   const billing = billingData[selectedBusiness as keyof typeof billingData]
@@ -103,7 +103,7 @@ export default function Billing() {
     <div className="flex-1 space-y-4 p-4 md:p-8 pt-6">
       <div className="flex items-center justify-between space-y-2">
         <div>
-          <h2 className="text-3xl font-bold tracking-tight">Billing - {getBusinessDisplayName(selectedBusiness)}</h2>
+          <h2 className="text-3xl pt-sans-bold tracking-tight">Billing - {getBusinessDisplayName(selectedBusiness)}</h2>
           <p className="text-muted-foreground">Manage your subscription and usage</p>
         </div>
         <BusinessSelector onBusinessChange={setSelectedBusiness} selectedBusiness={selectedBusiness} />

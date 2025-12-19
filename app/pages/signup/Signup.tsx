@@ -13,7 +13,7 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Checkbox } from "@/components/ui/checkbox"
 
-export default function Signup() {
+export function Signup() {
   const [showPassword, setShowPassword] = useState(false)
   const [showConfirmPassword, setShowConfirmPassword] = useState(false)
   const [formData, setFormData] = useState({
@@ -54,7 +54,7 @@ export default function Signup() {
               <span className="text-white font-bold text-xl">📞</span>
             </div>
           </div>
-          <CardTitle className="text-2xl font-bold text-center">Create your account</CardTitle>
+          <CardTitle className="text-2xl pt-sans-bold text-center">Create your account</CardTitle>
           <CardDescription className="text-center">Get started with AI Dialer today</CardDescription>
         </CardHeader>
         <form onSubmit={handleSignup}>

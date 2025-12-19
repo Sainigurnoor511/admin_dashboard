@@ -3,11 +3,11 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 
-export default function Settings() {
+export function Settings() {
   return (
     <div className="flex-1 space-y-4 p-4 md:p-8 pt-6">
       <div className="flex items-center justify-between space-y-2">
-        <h2 className="text-3xl font-bold tracking-tight">Settings</h2>
+        <h2 className="text-3xl pt-sans-bold tracking-tight">Settings</h2>
         <p className="text-muted-foreground">Manage your account and application preferences</p>
       </div>
 

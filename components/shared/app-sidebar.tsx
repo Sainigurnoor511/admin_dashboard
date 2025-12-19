@@ -88,7 +88,7 @@ export function AppSidebar() {
           <div className="w-8 h-8 bg-white rounded flex items-center justify-center">
             <span className="text-white font-bold text-sm">📞</span>
           </div>
-          <span className="font-bold text-lg">AI Dialer</span>
+          <span className="pt-sans-bold text-lg">AI Dialer</span>
         </div>
       </SidebarHeader>
 
@@ -158,7 +158,7 @@ export function AppSidebar() {
             <span className="text-sm font-medium">PK</span>
           </div>
           <div className="flex flex-col">
-            <span className="text-sm font-medium">Priyal Kansal</span>
+            <span className="text-sm pt-sans-bold">Priyal Kansal</span>
             <span className="text-xs text-muted-foreground">priyal@AI Dialer.ai</span>
           </div>
         </div>

@@ -4,7 +4,7 @@ import { useState } from "react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
-import { BusinessSelector } from "@/components/business-selector"
+import { BusinessSelector } from "@/components/shared/business-selector"
 import { Users, Phone, Clock, TrendingUp } from "lucide-react"
 
 const businessUsers = {
@@ -207,7 +207,7 @@ const businessUsers = {
   ],
 }
 
-export default function Business() {
+export function Business() {
   const [selectedBusiness, setSelectedBusiness] = useState("acme-corp")
 
   const users = businessUsers[selectedBusiness as keyof typeof businessUsers] || []
@@ -232,7 +232,7 @@ export default function Business() {
     <div className="flex-1 space-y-4 p-4 md:p-8 pt-6">
       <div className="flex items-center justify-between space-y-2">
         <div>
-          <h2 className="text-3xl font-bold tracking-tight">Business - {getBusinessDisplayName(selectedBusiness)}</h2>
+          <h2 className="text-3xl pt-sans-bold tracking-tight">Business - {getBusinessDisplayName(selectedBusiness)}</h2>
           <p className="text-muted-foreground">Manage users and their call activity</p>
         </div>
         <BusinessSelector onBusinessChange={setSelectedBusiness} selectedBusiness={selectedBusiness} />

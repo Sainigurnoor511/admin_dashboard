@@ -62,11 +62,11 @@ const callHistory = [
   },
 ]
 
-export default function CallHistory() {
+export function CallHistory() {
   return (
     <div className="flex-1 space-y-4 p-4 md:p-8 pt-6">
       <div className="flex items-center justify-between space-y-2">
-        <h2 className="text-3xl font-bold tracking-tight">Call History</h2>
+        <h2 className="text-3xl pt-sans-bold tracking-tight">Call History</h2>
         <p className="text-muted-foreground">Complete history of all calls for your business</p>
       </div>
 
