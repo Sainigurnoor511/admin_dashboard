@@ -1,4 +1,4 @@
-import { CallHistory } from "@/app/pages/call-history/CallHistory"
+import { CallHistory } from "@/components/pages/call-history/CallHistory"
 
 export default function CallHistoryPage() {
   return <CallHistory />

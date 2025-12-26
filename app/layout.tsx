@@ -2,8 +2,6 @@ import type React from "react"
 import type { Metadata } from "next"
 import "../styles/globals.css"
 import { ThemeProvider } from "@/components/shared/theme-provider"
-import { SidebarProvider, SidebarInset, SidebarTrigger } from "@/components/ui/sidebar"
-import { AppSidebar } from "@/components/shared/app-sidebar"
 import { AuthGuard } from "@/components/shared/auth-guard"
 import { ConditionalLayout } from "@/components/shared/conditional-layout"
 

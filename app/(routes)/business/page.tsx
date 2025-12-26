@@ -1,4 +1,4 @@
-import { Business } from "@/app/pages/business/Business"
+import { Business } from "@/components/pages/business/Business"
 
 export default function BusinessPage() {
   return <Business />
